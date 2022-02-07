@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather Portal</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Bootstrap CSS -->
+    <!-- Use some bootstrap CSS and google fonts to quicken the process -->
+    <!-- you shall also add a favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/office/16/000000/sunset--v2.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+
+  <body>
+     <!-- Main container -->
+  <div class="container">
+    <!-- This shall hold the input fields and the output data -->
+    <fieldset>
+      <!-- This form shall be used to fetch your city name -->
+      <form action="/" method="post">
+        <input
+          name="cityName"
+          id="cityInput"
+          type="text"
+          class="ghost-input"
+          placeholder="Enter a City"
+          required
+          autocomplete="off"
+        />
+        <input type="submit" class="ghost-button" value="Get Weather info" />
+      </form>
+
+      <!-- Upon fetching of data you will display it -->
+      
+      <%if( weather !== null){ %>
+
+      <div class="card card-accent-dark mb-3">
+        <div class="card-header"> Weather Information </div>
+
+        <p class="card-text">
+          <i class='bx bx-map'></i> Place: <span class="text-style"> <%= place%>, <%= country%>  </span><br>
+          <i class='bx bxs-thermometer'></i> Temperature :<span class="text-style"> <%= temp %>°C</span><br />
+          <i class='bx bxs-droplet-half'></i> Humidity :<span class="text-style"> <%= humidity %>% </span><br />
+          <i class='bx bxs-tachometer'></i> Atmospheric Pressure :<span class="text-style"> <%= pressure %> Pascals </span><br />
+          <i class='bx bxl-tailwind-css'></i> It seems like : <span class="text-style"> <%= description %> </span>
+        </p>
+        
+      </div>
+
+      <% } %>
+    </fieldset>
+  </div>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+ 
+</html>

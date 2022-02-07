@@ -1,0 +1,133 @@
+body {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to right, #02AABD, #00CDAC );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  /* This will format the whole fieldset content*/
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* This will format the whole fieldset content*/
+  
+  fieldset {
+    display: block;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0em;
+    -webkit-padding-start: 0em;
+    -webkit-padding-end: 0em;
+    -webkit-padding-after: 0em;
+    border: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    min-width: -webkit-min-content;
+    padding: 30px;
+  }
+  
+  /* Format the input section */
+  
+  /* Format the input, paragraph, hover effect, focus and button */
+  .ghost-input,
+  p {
+    display: block;
+    font-weight: 300;
+    width: 100%;
+    font-size: 25px;
+    border: 0px;
+    outline: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #4b545f;
+    background: #fff;
+    font-family: Open Sans, Verdana;
+    padding: 10px 15px;
+    margin: 30px 0px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .ghost-input:focus {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .ghost-button {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 45px;
+    /* margin-left: auto; */
+    margin-right: auto;
+    text-align: center;
+    
+    width: 14%;
+    
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .ghost-button:hover {
+    border: 2px solid #515151;
+  }
+  
+  p {
+    color: #000;
+    padding-left: 7%;
+  }
+  
+  .text-style{
+    color: #e64a19;
+  }
+
+  
+  .card{
+   width: 55%; 
+   text-align: left;
+   margin-top: 5%;
+   margin-right: auto;
+   margin-left: auto;
+   transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+   cursor: pointer;
+   
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+
+  @media only screen and (max-width: 770px) {
+    .ghost-button{
+      width: 30%;
+    }
+    .card{
+      width: 90%;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+
+  .bx{
+    margin-right: 3%;
+    color: rgb(9, 32, 158) ;
+  }
